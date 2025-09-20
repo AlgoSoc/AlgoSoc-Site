@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import {
   GitHubLogoIcon,
   InstagramLogoIcon,
+  LinkedInLogoIcon,
   EnvelopeClosedIcon,
 } from "@radix-ui/react-icons";
 import Link from "next/link";
@@ -11,6 +12,7 @@ import {
   GITHUB_LINK,
   INSTAGRAM_LINK,
   DISCORD_LINK,
+  LINKEDIN_LINK,
 } from "@/utils/links";
 import DiscordIcon from "./DiscordIcon";
 
@@ -45,6 +47,7 @@ const Footer = () => {
               { icon: InstagramLogoIcon, href: INSTAGRAM_LINK },
               { icon: GitHubLogoIcon, href: GITHUB_LINK },
               { icon: DiscordIcon, href: DISCORD_LINK },
+              { icon: LinkedInLogoIcon, href: LINKEDIN_LINK },
               { icon: EnvelopeClosedIcon, href: `mailto:${EMAIL}` },
             ].map((social, index) => (
               <motion.div
